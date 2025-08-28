@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Portfolio</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+      color: #f1f5f9;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* Container */
+    .about-container {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+      text-align: center;
+    }
+
+    .about-container.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Profile Picture */
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 4px solid #38bdf8;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, border 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
+      border: 4px solid #facc15;
+    }
+
+    /* Header */
+    .about-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #facc15;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+
+    /* Paragraphs */
+    .about-container p {
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+      color: #f8fafc;
+      text-align: left;
+    }
+
+    /* Section Title */
+    .about-container h2 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #38bdf8;
+      border-left: 4px solid #facc15;
+      padding-left: 10px;
+      text-align: left;
+    }
+
+    /* List */
+    .about-container ul {
+      list-style: none;
+      margin-top: 1rem;
+      text-align: left;
+    }
+
+    .about-container ul li {
+      background: rgba(56, 189, 248, 0.1);
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .about-container ul li:hover {
+      background: rgba(250, 204, 21, 0.2);
+      transform: scale(1.03);
+    }
+
+    /* Certificate Section */
+    .certificate-section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    .certificate-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .certificate-section h2 {
+      font-size: 2rem;
+      color: #38bdf8;
+      margin-bottom: 1.5rem;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+
+    .certificate-img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.7);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .about-container, .certificate-section {
+        padding: 1.5rem;
+      }
+      .about-container h1 {
+        font-size: 2rem;
+      }
+      .about-container h2, .certificate-section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="about-container" id="about">
+    <!-- Profile Picture -->
+    <img src="Untitled design.png" alt="Profile Picture" class="profile-pic">
+
+    <h1>About Me</h1>
+    <p>
+      I am an enthusiastic web developer with a solid foundation in creating visually 
+      appealing, user-friendly, and responsive websites that have a significant business impact. 
+      Having experience with both front-end and back-end development, I like transforming intricate 
+      concepts into fluid online experiences. With expertise in WordPress and CMS systems, 
+      I guarantee scalable and optimised solutions for companies of all sizes.
+    </p>
+
+    <p>
+      My areas of expertise include modern technologies like <strong>HTML, CSS, JavaScript, React, 
+      and Node.js</strong>. Clean code and functionality are important to me, but so is creating websites 
+      that improve performance, accessibility, and usability. In addition to programming, I work closely 
+      with customers and cross-functional teams to enhance user journeys, coordinate websites with corporate 
+      objectives, and assist digital marketing tactics like analytics integration and SEO.
+    </p>
+
+    <h2>What I Bring:</h2>
+    <ul>
+      <li> End-to-end website design & development</li>
+      <li> Custom web applications and CMS solutions</li>
+      <li> Performance optimization & mobile-first design</li>
+      <li> Digital Marketing</li>
+      <li>Project Management</li>
+    </ul>
+  </section>
+
+  <!-- Certificate Section -->
+  <section class="certificate-section" id="certificate">
+    <h2></h2>
+    <img src="Screenshot 2025-08-06 190055.png" alt="IIBA Membership Certificate" class="certificate-img">
+  </section>
+
+  <script>
+    // Fade-in effect when section is visible on scroll
+    window.addEventListener("scroll", function () {
+      const sections = document.querySelectorAll(".about-container, .certificate-section");
+      const screenPos = window.innerHeight / 1.3;
+
+      sections.forEach(section => {
+        const sectionPos = section.getBoundingClientRect().top;
+        if (sectionPos < screenPos) {
+          section.classList.add("visible");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
