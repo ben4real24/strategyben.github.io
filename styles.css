@@ -136,8 +136,8 @@ a:hover {
   font-size: 0.9em;
   padding: 8px 15px;
   border-radius: 4px;
-  background: #003366;
-  color: blue;
+  background: blue;
+  color: white;
   margin: 5px;
   display: inline-block;
   width: auto;
@@ -208,3 +208,4 @@ a:hover {
     height: 250px;     /* fixed height */
   }
 }
+
